@@ -1,12 +1,10 @@
 <img alt="Logo" src="https://coderslab.pl/static/media/logoCLpl.bfb2c6b6.svg" width="400">
 
+#CharityApp
 
-Przed przystąpieniem do pracy  przeczytaj poniższe wskazówki.
-## Jak zacząć?
+### CharityApp is an application project allowing you to easily and securely donate goods to those who need it the most.
 
-1. Zaimportuj projekt jako projekt `Maven`, wg poniższych wskazówek:
-
-	* W `IntelliJ` wybieramy: `File –> New –> Project from Existing Sources...`
-	* Wskazujemy lokalizację katalogu ze sklonowanym projektem i zatwierdzamy.
-	* Następnie w nowym oknie wybieramy: `Import project from external model` i wskazujemy `Maven`
-	* Wybieramy kolejno opcje: `Next –> Next –> Next –> Finish`
+## Technologies
+* Java
+* Spring Boot
+* Others
