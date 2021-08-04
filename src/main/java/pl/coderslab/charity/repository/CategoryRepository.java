@@ -7,6 +7,6 @@ import pl.coderslab.charity.model.Category;
 @Repository
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
-    Category findByName(String name);
     Category findById(long id);
+    Category findByName(String name);
 }
