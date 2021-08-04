@@ -1,0 +1,14 @@
+INSERT INTO institution (description, name) VALUES ('Cel i misja: Pomoc dzieciom z ubogich rodzin.','Fundacja "Dbam o Zdrowie"');
+INSERT INTO institution (description, name) VALUES ('Cel i misja: Pomoc wybudzaniu dzieci ze śpiączki.','Fundacja "A kogo"');
+INSERT INTO institution (description, name) VALUES ('Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.','Fundacja “Dla dzieci"');
+INSERT INTO institution (description, name) VALUES ('Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania','Fundacja “Bez domu”');
+INSERT INTO institution (description, name) VALUES ('Cel i misja: Zrobić jak najlepiej projekt w ramach Portfolio Lab','Fundacja "Mam marzenie"');
+INSERT INTO category(name) VALUE ('ubrania');
+INSERT INTO category(name) VALUE ('gry komputerowe');
+INSERT INTO category(name) VALUE ('zabawki');
+INSERT INTO category(name) VALUE ('książki');
+INSERT INTO category(name) VALUE ('jedzenie');
+INSERT INTO donation(quantity) VALUE (1);
+INSERT INTO donation(quantity) VALUE (4);
+INSERT INTO donation(quantity) VALUE (2);
+INSERT INTO donation(quantity) VALUE (6);
