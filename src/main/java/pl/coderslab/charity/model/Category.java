@@ -1,6 +1,5 @@
 package pl.coderslab.charity.model;
 
-
 import lombok.*;
 
 import javax.persistence.Entity;
