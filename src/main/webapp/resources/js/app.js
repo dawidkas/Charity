@@ -164,8 +164,35 @@ document.addEventListener("DOMContentLoaded", function() {
       this.$step.parentElement.hidden = this.currentStep >= 5;
 
       // TODO: get data from inputs and show them in summary
-    }
 
+      $(function () {
+        $('#donationForm').change(function () {
+
+          let val = [];
+          $("input[name='categories']:checked + label").each(function (i) {
+            val[i] = " " + $(this).text();
+          });
+
+          let institution = $("input[name='institution']:checked + label").text();
+          let zip = $("#zipCode").val();
+          let quantity = $("#quantity").val();
+          let street = $("#street").val();
+          let city = $("#city").val();
+          let date = $("#date").val();
+          let time = $("#time").val();
+          let comment = $("#comment").val();
+
+          $('#bags').html(quantity);
+          $('#instit').html(institution);
+          $('#str').html(street);
+          $('#cit').html(city);
+          $('#zipC').html(zip);
+          $('#dat').html(date);
+          $('#tim').html(time);
+          $('#commnt').html(comment);
+        });
+      });
+    }
   }
   const form = document.querySelector(".form--steps");
   if (form !== null) {
