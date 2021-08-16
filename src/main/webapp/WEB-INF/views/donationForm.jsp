@@ -26,20 +26,18 @@
     <div class="form--steps-container">
         <%--@elvariable id="donation" type="pl.coderslab.charity.model"--%>
         <div class="form--steps-counter">Krok <span>1</span>/4</div>
-            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
         <!-- STEP 1: class .active is switching steps -->
         <form:form method="post" modelAttribute="donation" id="donationForm">
             <div data-step="1" class="active">
                 <h3>Zaznacz co chcesz oddać:</h3>
                     <%--                <div class="form-group form-group--checkbox">--%>
-                <label>
-                    <td>
-                        <form:checkboxes path="categories"
-                                         items="${categoryList}" itemValue="id" itemLabel="name"/>
-                    </td>
-                </label>
+                    <%--                    <label>--%>
+                <p style="margin-left: 15px; font-family: 'Open Sans', sans-serif; font-weight: 300; font-style: normal; font-size: 1.8rem; line-height: 40px"><form:checkboxes path="categories"
+                                    items="${categoryList}" itemValue="id" itemLabel="name" delimiter="<br/>"/></p><br>
+                    <%--                    </label>--%>
                     <%--                </div>--%>
-
                 <div class="form-group form-group--buttons">
                     <button type="submit" class="btn next-step">Dalej</button>
                 </div>
@@ -65,12 +63,12 @@
             <div data-step="3">
                 <h3>Wybierz organizacje, której chcesz pomóc:</h3>
                     <%--                <div class="form-group form-group--checkbox">--%>
-                <label>
+<%--                <label>--%>
+                <p style="margin-left: 15px; font-family: 'Open Sans', sans-serif; font-weight: 300; font-style: normal; font-size: 1.8rem; line-height: 40px">
                     <form:radiobuttons path="institution" items="${institutionList}"
-                                       itemLabel="name" itemValue="id" delimiter="<br/>"/><br>
-                </label>
+                                       itemLabel="name" itemValue="id" delimiter="<br/>"/></p><br>
+<%--                </label>--%>
                     <%--                </div>--%>
-
                 <div class="form-group form-group--buttons">
                     <button type="button" class="btn prev-step">Wstecz</button>
                     <button type="button" class="btn next-step">Dalej</button>
