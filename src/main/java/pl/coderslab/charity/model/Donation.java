@@ -14,6 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @ToString
 
+@Table(name = "Donations")
 @Entity
 public class Donation {
     @Id
