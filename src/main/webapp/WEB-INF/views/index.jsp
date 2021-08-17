@@ -78,6 +78,12 @@
                         <div class="title"><c:out value="${institution.name}"/></div>
                         <div class="subtitle"><c:out value="${institution.description}"/></div>
                     </div>
+                <c:if test="${status.last and status.count%2!=0}">
+                    <div class="col" style="visibility: hidden">
+                        <div class="title"></div>
+                        <div class="subtitle"></div>
+                    </div>
+                </c:if>
                 <c:if test="${status.last or status.count%2==0}"></li></c:if>
             </c:forEach>
         </ul>

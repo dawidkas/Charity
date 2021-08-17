@@ -2,10 +2,7 @@ package pl.coderslab.charity.model;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -13,6 +10,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @ToString
 
+@Table(name = "Institutions")
 @Entity
 public class Institution {
     @Id

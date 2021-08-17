@@ -9,7 +9,6 @@ import pl.coderslab.charity.repository.InstitutionRepository;
 
 import java.util.List;
 
-
 @Controller
 public class HomeController {
 
